@@ -14,8 +14,22 @@ public class UserCompetitionsIdTeams {
     private _links _links;
     @SerializedName("count")
     private int count;
-    @SerializedName("teams")
-    private List<Teams> teams;
+
+
+    public static class Self {
+        @SerializedName("href")
+        private String href;
+
+        public String getHref() {
+            return href;
+        }
+
+        public void setHref(String href) {
+            this.href = href;
+        }
+
+
+    }
 
     public _links get_links() {
         return _links;
@@ -33,6 +47,13 @@ public class UserCompetitionsIdTeams {
         this.count = count;
     }
 
+
+
+
+
+    @SerializedName("teams")
+    private List<Teams> teams;
+
     public List<Teams> getTeams() {
         return teams;
     }
@@ -41,105 +62,6 @@ public class UserCompetitionsIdTeams {
         this.teams = teams;
     }
 
-    public static class Self {
-        @SerializedName("href")
-        private String href;
-
-        public String getHref() {
-            return href;
-        }
-
-        public void setHref(String href) {
-            this.href = href;
-        }
-
-
-    }
-
-    public static class Competition {
-        @SerializedName("href")
-        private String href;
-
-        public String getHref() {
-            return href;
-        }
-
-        public void setHref(String href) {
-            this.href = href;
-        }
-    }
-
-    public static class _links {
-
-        @SerializedName("competition")
-        private Competition competition;
-        @SerializedName("self")
-        private Self self;
-        @SerializedName("fixtures")
-        private Fixtures fixtures;
-        @SerializedName("players")
-        private Players players;
-
-
-        public Competition getCompetition() {
-            return competition;
-        }
-
-        public void setCompetition(Competition competition) {
-            this.competition = competition;
-        }
-
-        public Self getSelf() {
-            return self;
-        }
-
-        public void setSelf(Self self) {
-            this.self = self;
-        }
-
-        public Fixtures getFixtures() {
-            return fixtures;
-        }
-
-        public void setFixtures(Fixtures fixtures) {
-            this.fixtures = fixtures;
-        }
-
-        public Players getPlayers() {
-            return players;
-        }
-
-        public void setPlayers(Players players) {
-            this.players = players;
-        }
-    }
-
-
-    public static class Fixtures {
-        @SerializedName("href")
-        private String href;
-
-        public String getHref() {
-            return href;
-        }
-
-        public void setHref(String href) {
-            this.href = href;
-        }
-    }
-
-    public static class Players {
-        @SerializedName("href")
-        private String href;
-
-        public String getHref() {
-            return href;
-        }
-
-        public void setHref(String href) {
-            this.href = href;
-        }
-    }
 
     public static class Teams {
         @SerializedName("_links")
@@ -203,4 +125,92 @@ public class UserCompetitionsIdTeams {
             this.crestUrl = crestUrl;
         }
     }
+
+
+
+    public static class _links {
+
+        @SerializedName("competition")
+        private Competition competition;
+        @SerializedName("self")
+        private Self self;
+        @SerializedName("fixtures")
+        private Fixtures fixtures;
+        @SerializedName("players")
+        private Players players;
+
+
+        public Competition getCompetition() {
+            return competition;
+        }
+
+        public void setCompetition(Competition competition) {
+            this.competition = competition;
+        }
+
+        public Self getSelf() {
+            return self;
+        }
+
+        public void setSelf(Self self) {
+            this.self = self;
+        }
+
+        public Fixtures getFixtures() {
+            return fixtures;
+        }
+
+        public void setFixtures(Fixtures fixtures) {
+            this.fixtures = fixtures;
+        }
+
+        public Players getPlayers() {
+            return players;
+        }
+
+        public void setPlayers(Players players) {
+            this.players = players;
+        }
+    }
+
+    public static class Competition {
+        @SerializedName("href")
+        private String href;
+
+        public String getHref() {
+            return href;
+        }
+
+        public void setHref(String href) {
+            this.href = href;
+        }
+    }
+
+    public static class Fixtures {
+        @SerializedName("href")
+        private String href;
+
+        public String getHref() {
+            return href;
+        }
+
+        public void setHref(String href) {
+            this.href = href;
+        }
+    }
+
+    public static class Players {
+        @SerializedName("href")
+        private String href;
+
+        public String getHref() {
+            return href;
+        }
+
+        public void setHref(String href) {
+            this.href = href;
+        }
+    }
+
+
 }

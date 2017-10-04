@@ -17,12 +17,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionCaption"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/caption" />
 
         <TextView
             android:id="@+id/tvCompetitionCaptionRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -34,12 +34,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionLeague"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/league" />
 
         <TextView
             android:id="@+id/tvCompetitionLeagueRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -52,12 +52,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionYear"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/year" />
 
         <TextView
             android:id="@+id/tvCompetitionYearRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -70,12 +70,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionCurrentMatchDay"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/currentmatchday" />
 
         <TextView
             android:id="@+id/tvCompetitionCurrentMatchDayRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -88,12 +88,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfMatchdays"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/numberofmatchdays" />
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfMatchdaysRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -106,12 +106,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfTeams"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/numberofteams" />
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfTeamsRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -124,12 +124,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfGames"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/numberofgames" />
 
         <TextView
             android:id="@+id/tvCompetitionNumberOfGamesRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
@@ -142,12 +142,12 @@
 
         <TextView
             android:id="@+id/tvCompetitionLastUpdated"
-            style="@style/textLeft"
+            style="@style/content_competitions_id_Names"
             android:text="@string/lastupdated" />
 
         <TextView
             android:id="@+id/tvCompetitionLastUpdatedRight"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 

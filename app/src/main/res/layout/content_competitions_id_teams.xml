@@ -24,7 +24,7 @@
 
         <TextView
             android:id="@+id/tvTeamName"
-            style="@style/textRight" />
+            style="@style/content_competitions_id_teams_Data" />
 
 
         <Button

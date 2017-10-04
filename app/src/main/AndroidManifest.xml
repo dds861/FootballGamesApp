@@ -11,21 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".competitions.ActivityCompetitions">
+        <activity android:name=".activities.ActivityCompetitions"/>
+        <activity android:name=".activities.ActivityCompetitionsId" />
+        <activity android:name=".activities.ActivityCompetitionsIdLeagueTable" />
+        <activity android:name=".activities.ActivityCompetitionsIdTeams" />
+        <activity android:name=".activities.ActivityTeamsIdPlayers" />
+        <activity android:name=".ActivityMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        //<!--android:parentActivityName=".competitions.ActivityCompetitions"-->
-
-
-        <!--android:parentActivityName=".competition.ActivityCompetition"-->
-
-
+        <activity android:name=".activities.ActivityFixtures"></activity>
     </application>
 
 </manifest>

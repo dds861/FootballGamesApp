@@ -2,14 +2,14 @@ package com.example.dd.retrofit1;
 
 import com.example.dd.retrofit1.users.UserCompetitions;
 import com.example.dd.retrofit1.users.UserCompetitionsId;
-import com.example.dd.retrofit1.users.UserFixturesId;
 import com.example.dd.retrofit1.users.UserCompetitionsIdFixtures;
-import com.example.dd.retrofit1.users.UserFixtures;
-import com.example.dd.retrofit1.users.UserTeamsIdFixtures;
 import com.example.dd.retrofit1.users.UserCompetitionsIdLeagueTable;
-import com.example.dd.retrofit1.users.UserTeamsIdPlayers;
-import com.example.dd.retrofit1.users.UserTeamsId;
 import com.example.dd.retrofit1.users.UserCompetitionsIdTeams;
+import com.example.dd.retrofit1.users.UserFixtures;
+import com.example.dd.retrofit1.users.UserFixturesId;
+import com.example.dd.retrofit1.users.UserTeamsId;
+import com.example.dd.retrofit1.users.UserTeamsIdFixtures;
+import com.example.dd.retrofit1.users.UserTeamsIdPlayers;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 
-    /*
+    /**
       Competition   - List all available competitions.                  http://api.football-data.org/v1/competitions/                   season=/\d\d\d\d/
       Team          - List all teams for a certain competition.         http://api.football-data.org/v1/competitions/{id}/teams
       LeagueTable   - Show League Table / current standing.             http://api.football-data.org/v1/competitions/{id}/leagueTable   matchday=/\d+/

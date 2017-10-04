@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Football Schedule</string>
+    <string name="app_name">Good Football Data</string>
     <string name="numberofteams">numberOfTeams:</string>
     <string name="caption">caption:</string>
     <string name="league">league:</string>
@@ -18,4 +18,26 @@
     <string name="tvPlayerNationality">nationality</string>
     <string name="tvPlayerContractUntil">contractUntil</string>
     <string name="tvPlayerMarketValue">marketValue</string>
+    <string name="tvCompetitionsIdLeagueTable_teamName">teamName</string>
+    <string name="tvCompetitionsIdLeagueTable_position">position</string>
+    <string name="tvCompetitionsIdLeagueTable_playedGames">playedGames</string>
+    <string name="tvCompetitionsIdLeagueTable_points">points</string>
+    <string name="tvCompetitionsIdLeagueTable_goals">goals</string>
+    <string name="tvCompetitionsIdLeagueTable_goalsAgainst">goalsAgainst</string>
+    <string name="tvCompetitionsIdLeagueTable_goalDifference">goalDifference</string>
+    <string name="tvCompetitionsIdLeagueTable_wins">wins</string>
+    <string name="tvCompetitionsIdLeagueTable_draws">draws</string>
+    <string name="tvCompetitionsIdLeagueTable_losses">losses</string>
+    <string name="tvCompetitionsIdLeagueTable_homeGoals">homeGoals</string>
+    <string name="tvCompetitionsIdLeagueTable_homeGoalsAgainst">homeGoalsAgainst</string>
+    <string name="tvCompetitionsIdLeagueTable_homeWins">homeWins</string>
+    <string name="tvCompetitionsIdLeagueTable_homeDraws">homeDraws</string>
+    <string name="tvCompetitionsIdLeagueTable_homeLosses">homeLosses</string>
+    <string name="tvCompetitionsIdLeagueTable_awayGoals">awayGoals</string>
+    <string name="tvCompetitionsIdLeagueTable_awayGoalsAgainst">awayGoalsAgainst</string>
+    <string name="tvCompetitionsIdLeagueTable_awayWins">awayWins</string>
+    <string name="tvCompetitionsIdLeagueTable_awayDraws">awayDraws</string>
+    <string name="tvCompetitionsIdLeagueTable_awayLosses">awayLosses</string>
+    <string name="btnCompetitions">competitions</string>
+    <string name="btnFixtures">Fixtures</string>
 </resources>

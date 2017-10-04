@@ -6,14 +6,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.example.dd.retrofit1.adapters.AdapterCompetition;
 import com.example.dd.retrofit1.adapters.AdapterCompetitions;
-import com.example.dd.retrofit1.adapters.AdapterPlayers;
-import com.example.dd.retrofit1.adapters.AdapterTeams;
-import com.example.dd.retrofit1.users.UserCompetitionsId;
+import com.example.dd.retrofit1.adapters.AdapterCompetitionsId;
+import com.example.dd.retrofit1.adapters.AdapterCompetitionsIdLeagueTable;
+import com.example.dd.retrofit1.adapters.AdapterCompetitionsIdTeams;
+import com.example.dd.retrofit1.adapters.AdapterTeamsIdPlayers;
 import com.example.dd.retrofit1.users.UserCompetitions;
-import com.example.dd.retrofit1.users.UserTeamsIdPlayers;
+import com.example.dd.retrofit1.users.UserCompetitionsId;
+import com.example.dd.retrofit1.users.UserCompetitionsIdLeagueTable;
 import com.example.dd.retrofit1.users.UserCompetitionsIdTeams;
+import com.example.dd.retrofit1.users.UserTeamsIdPlayers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,33 +30,34 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by dds86 on 29.09.2017.
  */
 
-public class RetrofitInitialize extends AppCompatActivity {
+public class CreateRetrofit extends AppCompatActivity {
     private Context context;
     private RecyclerView recyclerView;
     private int id;
     private String url = "http://api.football-data.org/";
     private Retrofit retrofit = null;
 
-    public RetrofitInitialize(Context context, RecyclerView recyclerView, int id) {
+    public CreateRetrofit(Context context, int id, RecyclerView recyclerView) {
         this.context = context;
-        this.recyclerView = recyclerView;
         this.id = id;
+        this.recyclerView=recyclerView;
     }
 
-    public void retrofitCheckForNull() {
+    public void isRetrofitNull() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
 
                     .baseUrl(url)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
+
         }
     }
 
-    public void getCompetitionsList() {
+    public void getRetrofitCompetitions() {
 
         //1
-        retrofitCheckForNull();
+        isRetrofitNull();
 
 
         APIService service = retrofit.create(APIService.class);
@@ -63,10 +66,13 @@ public class RetrofitInitialize extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<UserCompetitions>> call, Response<List<UserCompetitions>> response) {
 
+
                 List<UserCompetitions> data = response.body();
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
-                recyclerView.setLayoutManager(layoutManager);
                 AdapterCompetitions recyclerViewAdapter = new AdapterCompetitions(context, data);
+
+
+                recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(recyclerViewAdapter);
 
             }
@@ -79,20 +85,19 @@ public class RetrofitInitialize extends AppCompatActivity {
 
     }
 
-    public void getCompetitionList() {
-        retrofitCheckForNull();
+    public void getRetrofitCompetitionsId() {
+        isRetrofitNull();
 
         APIService apiService = retrofit.create(APIService.class);
         Call<UserCompetitionsId> call2 = apiService.getApiCompetitionsId(id);
         call2.enqueue(new Callback<UserCompetitionsId>() {
             @Override
             public void onResponse(Call<UserCompetitionsId> call, Response<UserCompetitionsId> response) {
-
                 UserCompetitionsId userList = response.body();
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
                 recyclerView.setLayoutManager(layoutManager);
 
-                AdapterCompetition recyclerViewAdapter = new AdapterCompetition(context, userList, id);
+                AdapterCompetitionsId recyclerViewAdapter = new AdapterCompetitionsId(context, userList, id);
                 recyclerView.setAdapter(recyclerViewAdapter);
             }
 
@@ -104,25 +109,21 @@ public class RetrofitInitialize extends AppCompatActivity {
         });
     }
 
-    public void getTeamsList() {
+    public void getRetrofitCompetitionsIdTeams() {
 
-        retrofitCheckForNull();
+        isRetrofitNull();
 
         APIService service = retrofit.create(APIService.class);
         Call<UserCompetitionsIdTeams> call = service.getApiCompetitionsIdTeams(id);
-        Log.i("autolog", "id: " + id);
         call.enqueue(new Callback<UserCompetitionsIdTeams>() {
             @Override
             public void onResponse(Call<UserCompetitionsIdTeams> call, Response<UserCompetitionsIdTeams> response) {
 
-
                 UserCompetitionsIdTeams userList = response.body();
-                Log.i("autolog", "userList: " + userList);
                 ArrayList<UserCompetitionsIdTeams.Teams> data = new ArrayList<>(userList.getTeams());
-                Log.i("autolog", "data: " + data);
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+                AdapterCompetitionsIdTeams recyclerViewAdapter = new AdapterCompetitionsIdTeams(context, data, id);
                 recyclerView.setLayoutManager(layoutManager);
-                AdapterTeams recyclerViewAdapter = new AdapterTeams(context, data,id);
                 recyclerView.setAdapter(recyclerViewAdapter);
 
 
@@ -136,9 +137,38 @@ public class RetrofitInitialize extends AppCompatActivity {
 
     }
 
-    public void getPlayersList() {
+    public void getRetrofitCompetitionsIdLeagueTable() {
 
-        retrofitCheckForNull();
+        isRetrofitNull();
+
+        APIService service = retrofit.create(APIService.class);
+        Call<UserCompetitionsIdLeagueTable> call = service.getApiCompetitionsIdLeagueTable(id);
+        Log.i("autolog", "id: " + id);
+        call.enqueue(new Callback<UserCompetitionsIdLeagueTable>() {
+            @Override
+            public void onResponse(Call<UserCompetitionsIdLeagueTable> call, Response<UserCompetitionsIdLeagueTable> response) {
+
+                UserCompetitionsIdLeagueTable userList = response.body();
+                ArrayList<UserCompetitionsIdLeagueTable.Standing> data = new ArrayList<>(userList.getStanding());
+                LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+                recyclerView.setLayoutManager(layoutManager);
+                AdapterCompetitionsIdLeagueTable recyclerViewAdapter = new AdapterCompetitionsIdLeagueTable(context, data, id);
+                recyclerView.setAdapter(recyclerViewAdapter);
+
+
+            }
+
+            @Override
+            public void onFailure(Call<UserCompetitionsIdLeagueTable> call, Throwable t) {
+                Log.d("123", t.getMessage());
+            }
+        });
+
+    }
+
+    public void getRetrofitTeamsIdPlayers() {
+
+        isRetrofitNull();
 
         APIService service = retrofit.create(APIService.class);
         Call<UserTeamsIdPlayers> call = service.getApiTeamsIdPlayers(57);
@@ -154,7 +184,7 @@ public class RetrofitInitialize extends AppCompatActivity {
                 Log.i("autolog", "data: " + data);
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
                 recyclerView.setLayoutManager(layoutManager);
-                AdapterPlayers recyclerViewAdapter = new AdapterPlayers(context, data,id);
+                AdapterTeamsIdPlayers recyclerViewAdapter = new AdapterTeamsIdPlayers(context, data, id);
                 recyclerView.setAdapter(recyclerViewAdapter);
 
 

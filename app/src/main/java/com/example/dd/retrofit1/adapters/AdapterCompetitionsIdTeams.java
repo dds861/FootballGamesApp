@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.bumptech.glide.Glide;
+import com.example.dd.retrofit1.activities.ActivityCompetitionsIdTeams;
 import com.example.dd.retrofit1.R;
 import com.example.dd.retrofit1.ViewHolder;
-import com.example.dd.retrofit1.competitions.ActivityCompetitions;
 import com.example.dd.retrofit1.users.UserCompetitionsIdTeams;
 
 import java.util.ArrayList;
@@ -21,13 +21,13 @@ import java.util.ArrayList;
  * Created by dds86 on 30.09.2017.
  */
 
-public class AdapterTeams extends RecyclerView.Adapter<ViewHolder> {
+public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder> {
 
     Context context;
     ArrayList<UserCompetitionsIdTeams.Teams> teams;
     private int idItemClicked;
 
-    public AdapterTeams(Context context, ArrayList<UserCompetitionsIdTeams.Teams> teams, int idItemClicked) {
+    public AdapterCompetitionsIdTeams(Context context, ArrayList<UserCompetitionsIdTeams.Teams> teams, int idItemClicked) {
         this.context = context;
         this.teams = teams;
         this.idItemClicked = idItemClicked;
@@ -35,17 +35,18 @@ public class AdapterTeams extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.content_teams, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.content_competitions_id_teams, parent, false);
         Button btnTeams = (Button) view.findViewById(R.id.btnTeamPlayers);
         btnTeams.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ActivityCompetitions.class);
-                intent.putExtra("openActivity", 3);
+                Intent intent = new Intent(context, ActivityCompetitionsIdTeams.class);
+
                 intent.putExtra("idCompetitionClicked", idItemClicked);
                 context.startActivity(intent);
             }
         });
+
         return new ViewHolder(view);
     }
 

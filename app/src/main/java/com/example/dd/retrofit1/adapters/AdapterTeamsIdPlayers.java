@@ -17,13 +17,13 @@ import java.util.ArrayList;
  * Created by dds86 on 30.09.2017.
  */
 
-public class AdapterPlayers extends RecyclerView.Adapter<ViewHolder> {
+public class AdapterTeamsIdPlayers extends RecyclerView.Adapter<ViewHolder> {
 
     Context context;
     ArrayList<UserTeamsIdPlayers.Players> players;
     private int idItemClicked;
 
-    public AdapterPlayers(Context context, ArrayList<UserTeamsIdPlayers.Players> players, int idItemClicked) {
+    public AdapterTeamsIdPlayers(Context context, ArrayList<UserTeamsIdPlayers.Players> players, int idItemClicked) {
         this.context = context;
         this.players = players;
         this.idItemClicked = idItemClicked;
@@ -31,7 +31,7 @@ public class AdapterPlayers extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.content_players, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.content_teams_id_players, parent, false);
 
         return new ViewHolder(view);
     }

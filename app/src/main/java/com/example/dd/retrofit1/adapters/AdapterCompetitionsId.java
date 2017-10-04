@@ -8,9 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.dd.retrofit1.activities.ActivityCompetitionsIdLeagueTable;
+import com.example.dd.retrofit1.activities.ActivityCompetitionsIdTeams;
 import com.example.dd.retrofit1.R;
 import com.example.dd.retrofit1.ViewHolder;
-import com.example.dd.retrofit1.competitions.ActivityCompetitions;
 import com.example.dd.retrofit1.users.UserCompetitionsId;
 
 
@@ -18,14 +19,14 @@ import com.example.dd.retrofit1.users.UserCompetitionsId;
  * Created by dd on 09.05.2017.
  */
 
-public class AdapterCompetition extends RecyclerView.Adapter<ViewHolder> {
+public class AdapterCompetitionsId extends RecyclerView.Adapter<ViewHolder> {
 
     private UserCompetitionsId item;
     private Context context;
     private int idItemClicked;
 
 
-    public AdapterCompetition(Context context, UserCompetitionsId item, int idItemClicked) {
+    public AdapterCompetitionsId(Context context, UserCompetitionsId item, int idItemClicked) {
         this.context = context;
         this.item = item;
         this.idItemClicked = idItemClicked;
@@ -33,14 +34,23 @@ public class AdapterCompetition extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public com.example.dd.retrofit1.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_competition, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_competitions_id, parent, false);
 
         Button btnTeams = (Button) view.findViewById(R.id.btnTeams);
         btnTeams.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ActivityCompetitions.class);
-                intent.putExtra("openActivity", 2);
+                Intent intent = new Intent(context, ActivityCompetitionsIdTeams.class);
+                intent.putExtra("idCompetitionClicked", idItemClicked);
+                context.startActivity(intent);
+            }
+        });
+
+        Button btnLeagueRable = (Button) view.findViewById(R.id.btnLeagueTable);
+        btnLeagueRable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ActivityCompetitionsIdLeagueTable.class);
                 intent.putExtra("idCompetitionClicked", idItemClicked);
                 context.startActivity(intent);
             }

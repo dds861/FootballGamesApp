@@ -7,9 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.dd.retrofit1.activities.ActivityCompetitionsId;
 import com.example.dd.retrofit1.R;
 import com.example.dd.retrofit1.ViewHolder;
-import com.example.dd.retrofit1.competitions.ActivityCompetitions;
 import com.example.dd.retrofit1.users.UserCompetitions;
 
 import java.util.List;
@@ -51,8 +51,7 @@ public class AdapterCompetitions extends RecyclerView.Adapter<ViewHolder> {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(context, ActivityCompetitions.class);
-                intent.putExtra("openActivity", 1);
+                Intent intent = new Intent(context, ActivityCompetitionsId.class);
                 intent.putExtra("idCompetitionClicked", data.get(position).getId());
                 context.startActivity(intent);
 
