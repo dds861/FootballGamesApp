@@ -40,4 +40,20 @@
     <string name="tvCompetitionsIdLeagueTable_awayLosses">awayLosses</string>
     <string name="btnCompetitions">competitions</string>
     <string name="btnFixtures">Fixtures</string>
+    <string name="tvCompetitionsIdFixturesRight_date">date</string>
+    <string name="tvCompetitionsIdFixturesRight_status">status</string>
+    <string name="tvCompetitionsIdFixturesRight_matchday">matchday</string>
+    <string name="tvCompetitionsIdFixturesRight_homeTeamName">homeTeamName</string>
+    <string name="tvCompetitionsIdFixturesRight_awayTeamName">awayTeamName</string>
+    <string name="tvCompetitionsIdFixturesRight_result">result</string>
+    <string name="tvCompetitionsIdFixturesRight_goalsHomeTeam">goalsHomeTeam</string>
+    <string name="tvCompetitionsIdFixturesRight_goalsAwayTeam">goalsAwayTeam</string>
+    <string name="tvFixturesRight_date">date</string>
+    <string name="tvFixturesRight_status">status</string>
+    <string name="tvFixturesRight_matchday">matchday</string>
+    <string name="tvFixturesRight_homeTeamName">homeTeamName</string>
+    <string name="tvFixturesRight_awayTeamName">awayTeamName</string>
+    <string name="tvFixturesRight_odds">odds</string>
+    <string name="tvFixturesRight_goalsHomeTeam">goalsHomeTeam</string>
+    <string name="tvFixturesRight_goalsAwayTeam">goalsAwayTeam</string>
 </resources>

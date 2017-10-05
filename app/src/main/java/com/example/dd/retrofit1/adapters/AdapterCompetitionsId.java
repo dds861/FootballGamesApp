@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.dd.retrofit1.activities.ActivityCompetitionsIdFixtures;
 import com.example.dd.retrofit1.activities.ActivityCompetitionsIdLeagueTable;
 import com.example.dd.retrofit1.activities.ActivityCompetitionsIdTeams;
 import com.example.dd.retrofit1.R;
@@ -36,7 +37,7 @@ public class AdapterCompetitionsId extends RecyclerView.Adapter<ViewHolder> {
     public com.example.dd.retrofit1.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_competitions_id, parent, false);
 
-        Button btnTeams = (Button) view.findViewById(R.id.btnTeams);
+        Button btnTeams = (Button) view.findViewById(R.id.btnCompetitionsIdTeams);
         btnTeams.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,11 +47,21 @@ public class AdapterCompetitionsId extends RecyclerView.Adapter<ViewHolder> {
             }
         });
 
-        Button btnLeagueRable = (Button) view.findViewById(R.id.btnLeagueTable);
-        btnLeagueRable.setOnClickListener(new View.OnClickListener() {
+        Button btnLeagueTable = (Button) view.findViewById(R.id.btnCompetitionsIdLeagueTable);
+        btnLeagueTable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ActivityCompetitionsIdLeagueTable.class);
+                intent.putExtra("idCompetitionClicked", idItemClicked);
+                context.startActivity(intent);
+            }
+        });
+
+        Button btnFixtures = (Button) view.findViewById(R.id.btnCompetitionsIdFixtures);
+        btnFixtures.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ActivityCompetitionsIdFixtures.class);
                 intent.putExtra("idCompetitionClicked", idItemClicked);
                 context.startActivity(intent);
             }

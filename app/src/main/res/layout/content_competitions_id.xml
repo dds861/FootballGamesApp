@@ -16,12 +16,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionCaption"
+            android:id="@+id/tvCompetitionsId_Caption"
             style="@style/content_competitions_id_Names"
             android:text="@string/caption" />
 
         <TextView
-            android:id="@+id/tvCompetitionCaptionRight"
+            android:id="@+id/tvCompetitionsId_CaptionRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -33,12 +33,12 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tvCompetitionLeague"
+            android:id="@+id/tvCompetitionsId_League"
             style="@style/content_competitions_id_Names"
             android:text="@string/league" />
 
         <TextView
-            android:id="@+id/tvCompetitionLeagueRight"
+            android:id="@+id/tvCompetitionsId_LeagueRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -51,12 +51,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionYear"
+            android:id="@+id/tvCompetitionsId_Year"
             style="@style/content_competitions_id_Names"
             android:text="@string/year" />
 
         <TextView
-            android:id="@+id/tvCompetitionYearRight"
+            android:id="@+id/tvCompetitionsId_YearRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -69,12 +69,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionCurrentMatchDay"
+            android:id="@+id/tvCompetitionsId_CurrentMatchDay"
             style="@style/content_competitions_id_Names"
             android:text="@string/currentmatchday" />
 
         <TextView
-            android:id="@+id/tvCompetitionCurrentMatchDayRight"
+            android:id="@+id/tvCompetitionsId_CurrentMatchDayRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -87,12 +87,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfMatchdays"
+            android:id="@+id/tvCompetitionsId_NumberOfMatchdays"
             style="@style/content_competitions_id_Names"
             android:text="@string/numberofmatchdays" />
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfMatchdaysRight"
+            android:id="@+id/tvCompetitionsId_NumberOfMatchdaysRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -105,12 +105,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfTeams"
+            android:id="@+id/tvCompetitionsId_NumberOfTeams"
             style="@style/content_competitions_id_Names"
             android:text="@string/numberofteams" />
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfTeamsRight"
+            android:id="@+id/tvCompetitionsId_NumberOfTeamsRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -123,12 +123,12 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfGames"
+            android:id="@+id/tvCompetitionsId_NumberOfGames"
             style="@style/content_competitions_id_Names"
             android:text="@string/numberofgames" />
 
         <TextView
-            android:id="@+id/tvCompetitionNumberOfGamesRight"
+            android:id="@+id/tvCompetitionsId_NumberOfGamesRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
@@ -141,30 +141,30 @@
 
 
         <TextView
-            android:id="@+id/tvCompetitionLastUpdated"
+            android:id="@+id/tvCompetitionsId_LastUpdated"
             style="@style/content_competitions_id_Names"
             android:text="@string/lastupdated" />
 
         <TextView
-            android:id="@+id/tvCompetitionLastUpdatedRight"
+            android:id="@+id/tvCompetitionsId_LastUpdatedRight"
             style="@style/content_competitions_id_Data" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnTeams"
+        android:id="@+id/btnCompetitionsIdTeams"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/teams" />
 
     <Button
-        android:id="@+id/btnfixtures"
+        android:id="@+id/btnCompetitionsIdFixtures"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fixtures" />
 
     <Button
-        android:id="@+id/btnLeagueTable"
+        android:id="@+id/btnCompetitionsIdLeagueTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/league_table" />

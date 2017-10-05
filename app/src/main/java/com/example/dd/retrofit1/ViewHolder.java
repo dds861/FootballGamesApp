@@ -32,26 +32,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public TextView tvTeamName;
 
     //UserCompetitionsIdLeagueTable
-//    public TextView tvCompetitionsIdLeagueTableRight_teamName;
-//    public TextView tvCompetitionsIdLeagueTableRight_position;
-//    public TextView tvCompetitionsIdLeagueTableRight_playedGames;
-//    public TextView tvCompetitionsIdLeagueTableRight_points;
-//    public TextView tvCompetitionsIdLeagueTableRight_goals;
-//    public TextView tvCompetitionsIdLeagueTableRight_goalsAgainst;
-//    public TextView tvCompetitionsIdLeagueTableRight_goalDifference;
-//    public TextView tvCompetitionsIdLeagueTableRight_wins;
-//    public TextView tvCompetitionsIdLeagueTableRight_draws;
-//    public TextView tvCompetitionsIdLeagueTableRight_losses;
-//    public TextView tvCompetitionsIdLeagueTableRight_homeGoals;
-//    public TextView tvCompetitionsIdLeagueTableRight_homeGoalsAgainst;
-//    public TextView tvCompetitionsIdLeagueTableRight_homeWins;
-//    public TextView tvCompetitionsIdLeagueTableRight_homeDraws;
-//    public TextView tvCompetitionsIdLeagueTableRight_homeLosses;
-//    public TextView tvCompetitionsIdLeagueTableRight_awayGoals;
-//    public TextView tvCompetitionsIdLeagueTableRight_awayGoalsAgainst;
-//    public TextView tvCompetitionsIdLeagueTableRight_awayWins;
-//    public TextView tvCompetitionsIdLeagueTableRight_awayDraws;
-//    public TextView tvCompetitionsIdLeagueTableRight_awayLosses;
+
 
     public TextView tvCompetitionsIdLeagueTable_teamName;
     public TextView tvCompetitionsIdLeagueTableRight_teamName;
@@ -95,6 +76,15 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public TextView tvCompetitionsIdLeagueTableRight_awayLosses;
 
 
+    //UserCompetitionsIdFixtures
+    public TextView tvCompetitionsIdFixturesRight_date;
+    public TextView tvCompetitionsIdFixturesRight_status;
+    public TextView tvCompetitionsIdFixturesRight_matchday;
+    public TextView tvCompetitionsIdFixturesRight_homeTeamName;
+    public TextView tvCompetitionsIdFixturesRight_awayTeamName;
+    public TextView tvCompetitionsIdFixturesRight_goalsHomeTeam;
+    public TextView tvCompetitionsIdFixturesRight_goalsAwayTeam;
+
     //UserTeamsIdPlayers
     public TextView mTvPlayerNameRight;
     public TextView mTvPlayerPositionRight;
@@ -114,40 +104,20 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         this.view = itemView;
 
         //UserCompetitionsId
-        this.tvCompetitionCaptionRight = (TextView) view.findViewById(R.id.tvCompetitionCaptionRight);
-        this.tvCompetitionLeagueRight = (TextView) view.findViewById(R.id.tvCompetitionLeagueRight);
-        this.tvCompetitionYearRight = (TextView) view.findViewById(R.id.tvCompetitionYearRight);
-        this.tvCompetitionNumberOfTeamsRight = (TextView) view.findViewById(R.id.tvCompetitionNumberOfTeamsRight);
-        this.tvCompetitionCurrentMatchDayRight = (TextView) view.findViewById(R.id.tvCompetitionCurrentMatchDayRight);
-        this.tvCompetitionNumberOfMatchdaysRight = (TextView) view.findViewById(R.id.tvCompetitionNumberOfMatchdaysRight);
-        this.tvCompetitionLastUpdatedRight = (TextView) view.findViewById(R.id.tvCompetitionLastUpdatedRight);
-        this.tvCompetitionNumberOfGamesRight = (TextView) view.findViewById(R.id.tvCompetitionNumberOfGamesRight);
+        this.tvCompetitionCaptionRight = (TextView) view.findViewById(R.id.tvCompetitionsId_CaptionRight);
+        this.tvCompetitionLeagueRight = (TextView) view.findViewById(R.id.tvCompetitionsId_LeagueRight);
+        this.tvCompetitionYearRight = (TextView) view.findViewById(R.id.tvCompetitionsId_YearRight);
+        this.tvCompetitionNumberOfTeamsRight = (TextView) view.findViewById(R.id.tvCompetitionsId_NumberOfTeamsRight);
+        this.tvCompetitionCurrentMatchDayRight = (TextView) view.findViewById(R.id.tvCompetitionsId_CurrentMatchDayRight);
+        this.tvCompetitionNumberOfMatchdaysRight = (TextView) view.findViewById(R.id.tvCompetitionsId_NumberOfMatchdaysRight);
+        this.tvCompetitionLastUpdatedRight = (TextView) view.findViewById(R.id.tvCompetitionsId_LastUpdatedRight);
+        this.tvCompetitionNumberOfGamesRight = (TextView) view.findViewById(R.id.tvCompetitionsId_NumberOfGamesRight);
 
         //UserCompetitionsIdTeams
         this.tvTeamCrestUrl = (ImageView) view.findViewById(R.id.tvTeamCrestUrl);
         this.tvTeamName = (TextView) view.findViewById(R.id.tvTeamName);
 
         //UserCompetitionsIdLeagueTable
-//        this.tvCompetitionsIdLeagueTableRight_teamName = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_teamName);
-//        this.tvCompetitionsIdLeagueTableRight_position = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_position);
-//        this.tvCompetitionsIdLeagueTableRight_playedGames = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_playedGames);
-//        this.tvCompetitionsIdLeagueTableRight_points = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_points);
-//        this.tvCompetitionsIdLeagueTableRight_goals = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_goals);
-//        this.tvCompetitionsIdLeagueTableRight_goalsAgainst = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_goalsAgainst);
-//        this.tvCompetitionsIdLeagueTableRight_goalDifference = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_goalDifference);
-//        this.tvCompetitionsIdLeagueTableRight_wins = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_wins);
-//        this.tvCompetitionsIdLeagueTableRight_draws = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_draws);
-//        this.tvCompetitionsIdLeagueTableRight_losses = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_losses);
-//        this.tvCompetitionsIdLeagueTableRight_homeGoals = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_homeGoals);
-//        this.tvCompetitionsIdLeagueTableRight_homeGoalsAgainst = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_homeGoalsAgainst);
-//        this.tvCompetitionsIdLeagueTableRight_homeWins = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_homeWins);
-//        this.tvCompetitionsIdLeagueTableRight_homeDraws = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_homeDraws);
-//        this.tvCompetitionsIdLeagueTableRight_homeLosses = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_homeLosses);
-//        this.tvCompetitionsIdLeagueTableRight_awayGoals = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayGoals);
-//        this.tvCompetitionsIdLeagueTableRight_awayGoalsAgainst = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayGoalsAgainst);
-//        this.tvCompetitionsIdLeagueTableRight_awayWins = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayWins);
-//        this.tvCompetitionsIdLeagueTableRight_awayDraws = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayDraws);
-//        this.tvCompetitionsIdLeagueTableRight_awayLosses = (TextView) itemView.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayLosses);
         this.tvCompetitionsIdLeagueTable_teamName = (TextView) view.findViewById(R.id.tvCompetitionsIdLeagueTable_teamName);
         this.tvCompetitionsIdLeagueTableRight_teamName = (TextView) view.findViewById(R.id.tvCompetitionsIdLeagueTableRight_teamName);
         this.tvCompetitionsIdLeagueTable_position = (TextView) view.findViewById(R.id.tvCompetitionsIdLeagueTable_position);
@@ -189,6 +159,15 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         this.tvCompetitionsIdLeagueTable_awayLosses = (TextView) view.findViewById(R.id.tvCompetitionsIdLeagueTable_awayLosses);
         this.tvCompetitionsIdLeagueTableRight_awayLosses = (TextView) view.findViewById(R.id.tvCompetitionsIdLeagueTableRight_awayLosses);
 
+        //UserCompetitionsIdFixtures
+        this.tvCompetitionsIdFixturesRight_date = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_date);
+        this.tvCompetitionsIdFixturesRight_status = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_status);
+        this.tvCompetitionsIdFixturesRight_matchday = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_matchday);
+        this.tvCompetitionsIdFixturesRight_homeTeamName = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_homeTeamName);
+        this.tvCompetitionsIdFixturesRight_awayTeamName = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_awayTeamName);
+        this.tvCompetitionsIdFixturesRight_goalsHomeTeam = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_goalsHomeTeam);
+        this.tvCompetitionsIdFixturesRight_goalsAwayTeam = (TextView) view.findViewById(R.id.tvCompetitionsIdFixturesRight_goalsAwayTeam);
+
         //UserTeamsIdPlayers
         this.mTvPlayerNameRight = (TextView) view.findViewById(R.id.tvPlayerNameRight);
         this.mTvPlayerPositionRight = (TextView) view.findViewById(R.id.tvPlayerPositionRight);
@@ -199,4 +178,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         this.mTvPlayerMarketValueRight = (TextView) view.findViewById(R.id.tvPlayerMarketValueRight);
 
     }
+
+
+
 }

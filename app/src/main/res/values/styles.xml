@@ -9,8 +9,33 @@
     </style>
 
 
+    <style name="activity_competitions_id_league_table_TextView">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 
+    <style name="activity_competitions_id_fixtures_Data">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 
+    <style name="activity_fixtures_Data">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="activity_competitions_id_league_table_LinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="activity_competitions_id_league_table_LinearLayout_TeamNames">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
 
     <style name="content_competitions_id_Names">
@@ -34,42 +59,27 @@
         <item name="android:gravity">left</item>
     </style>
 
-
-
-
-    <style name="activity_competitions_id_league_table_TextView">
-
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">90dp</item>
-
-        <item name="android:gravity">center_vertical</item>
+    <style name="content_competitions_id_fixtures_TextView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:textAlignment">center</item>
-    </style>
-
-    <style name="activity_competitions_id_league_table_LinearLayout_TeamNames">
-        <item name="android:layout_width">140dp</item>
-        <item name="android:layout_height">90dp</item>
-    </style>
-
-    <style name="activity_competitions_id_league_table_LinearLayout">
-        <item name="android:layout_width">60dp</item>
-        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="content_competitions_id_league_table_TextView">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="content_competitions_id_league_table_LinearLayout_TeamNames">
-        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_width">120dp</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="content_competitions_id_league_table_LinearLayout">
-        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 

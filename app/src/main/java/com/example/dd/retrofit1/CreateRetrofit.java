@@ -8,11 +8,13 @@ import android.util.Log;
 
 import com.example.dd.retrofit1.adapters.AdapterCompetitions;
 import com.example.dd.retrofit1.adapters.AdapterCompetitionsId;
+import com.example.dd.retrofit1.adapters.AdapterCompetitionsIdFixtures;
 import com.example.dd.retrofit1.adapters.AdapterCompetitionsIdLeagueTable;
 import com.example.dd.retrofit1.adapters.AdapterCompetitionsIdTeams;
 import com.example.dd.retrofit1.adapters.AdapterTeamsIdPlayers;
 import com.example.dd.retrofit1.users.UserCompetitions;
 import com.example.dd.retrofit1.users.UserCompetitionsId;
+import com.example.dd.retrofit1.users.UserCompetitionsIdFixtures;
 import com.example.dd.retrofit1.users.UserCompetitionsIdLeagueTable;
 import com.example.dd.retrofit1.users.UserCompetitionsIdTeams;
 import com.example.dd.retrofit1.users.UserTeamsIdPlayers;
@@ -166,6 +168,34 @@ public class CreateRetrofit extends AppCompatActivity {
 
     }
 
+    public void getRetrofitCompetitionsIdFixtures() {
+
+        isRetrofitNull();
+
+        APIService service = retrofit.create(APIService.class);
+        Call<UserCompetitionsIdFixtures> call = service.getApiCompetitionsIdFixtures(id);
+        Log.i("autolog", "id: " + id);
+        call.enqueue(new Callback<UserCompetitionsIdFixtures>() {
+            @Override
+            public void onResponse(Call<UserCompetitionsIdFixtures> call, Response<UserCompetitionsIdFixtures> response) {
+
+                UserCompetitionsIdFixtures userList = response.body();
+                ArrayList<UserCompetitionsIdFixtures.Fixtures> data = new ArrayList<>(userList.getFixtures());
+                LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+                recyclerView.setLayoutManager(layoutManager);
+                AdapterCompetitionsIdFixtures recyclerViewAdapter = new AdapterCompetitionsIdFixtures(context, data, id);
+                recyclerView.setAdapter(recyclerViewAdapter);
+
+
+            }
+
+            @Override
+            public void onFailure(Call<UserCompetitionsIdFixtures> call, Throwable t) {
+                Log.d("123", t.getMessage());
+            }
+        });
+
+    }
     public void getRetrofitTeamsIdPlayers() {
 
         isRetrofitNull();
@@ -197,6 +227,7 @@ public class CreateRetrofit extends AppCompatActivity {
         });
 
     }
+
 
 
 }

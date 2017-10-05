@@ -12,37 +12,30 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <LinearLayout
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
 
-                <LinearLayout
+                >
 
-                    style="@style/activity_competitions_id_league_table_LinearLayout_TeamNames"
-                    android:orientation="vertical">
+                <TableRow>
+
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_teamName"
-                        style="@style/activity_competitions_id_league_table_TextView"
+                        style="@style/activity_competitions_id_league_table_LinearLayout_TeamNames"
 
                         android:text="@string/tvCompetitionsIdLeagueTable_teamName" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_position"
@@ -50,23 +43,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_position" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_playedGames"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_playedGames" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_points"
@@ -74,23 +55,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_points" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_goals"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_goals" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_goalsAgainst"
@@ -98,23 +67,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_goalsAgainst" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_goalDifference"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_goalDifference" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_wins"
@@ -122,23 +79,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_wins" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_draws"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_draws" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_losses"
@@ -146,23 +91,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_losses" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_homeGoals"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_homeGoals" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_homeGoalsAgainst"
@@ -170,23 +103,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_homeGoalsAgainst" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_homeWins"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_homeWins" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_homeDraws"
@@ -194,23 +115,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_homeDraws" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_homeLosses"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_homeLosses" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_awayGoals"
@@ -218,23 +127,11 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_awayGoals" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_awayGoalsAgainst"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_awayGoalsAgainst" />
 
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_awayWins"
@@ -242,48 +139,34 @@
                         android:text="@string/tvCompetitionsIdLeagueTable_awayWins" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_awayDraws"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_awayDraws" />
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/activity_competitions_id_league_table_LinearLayout"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tvCompetitionsIdLeagueTable_awayLosses"
                         style="@style/activity_competitions_id_league_table_TextView"
                         android:text="@string/tvCompetitionsIdLeagueTable_awayLosses" />
 
+                </TableRow>
+            </TableLayout>
 
-                </LinearLayout>
-
-
-            </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_competitions_id_league_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="vertical" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary" />
         </LinearLayout>
     </HorizontalScrollView>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary" />
 </LinearLayout>

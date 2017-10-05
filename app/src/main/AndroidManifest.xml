@@ -14,6 +14,7 @@
         <activity android:name=".activities.ActivityCompetitions"/>
         <activity android:name=".activities.ActivityCompetitionsId" />
         <activity android:name=".activities.ActivityCompetitionsIdLeagueTable" />
+        <activity android:name=".activities.ActivityCompetitionsIdFixtures" />
         <activity android:name=".activities.ActivityCompetitionsIdTeams" />
         <activity android:name=".activities.ActivityTeamsIdPlayers" />
         <activity android:name=".ActivityMain">
