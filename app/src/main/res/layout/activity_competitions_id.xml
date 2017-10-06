@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.dd.retrofit1.activities.ActivityCompetitions">
+    tools:context="com.good.dd.footballdata.activities.ActivityCompetitions">
 
 
     <android.support.v7.widget.RecyclerView

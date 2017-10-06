@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.dd.retrofit1.activities.ActivityFixtures">
+    tools:context="com.good.dd.footballdata.activities.ActivityFixtures">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -24,44 +24,44 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_date"
+                        android:id="@+id/tvFixtures_date"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_date" />
+                        android:text="@string/tvFixtures_date" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_status"
+                        android:id="@+id/tvFixtures_status"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_status" />
+                        android:text="@string/tvFixtures_status" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_matchday"
+                        android:id="@+id/tvFixtures_matchday"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_matchday" />
+                        android:text="@string/tvFixtures_matchday" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_homeTeamName"
+                        android:id="@+id/tvFixtures_homeTeamName"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_homeTeamName" />
+                        android:text="@string/tvFixtures_homeTeamName" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_awayTeamName"
+                        android:id="@+id/tvFixtures_awayTeamName"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_awayTeamName" />
+                        android:text="@string/tvFixtures_awayTeamName" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_odds"
+                        android:id="@+id/tvFixtures_odds"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_odds" />
+                        android:text="@string/tvFixtures_odds" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_goalsHomeTeam"
+                        android:id="@+id/tvFixtures_goalsHomeTeam"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_goalsHomeTeam" />
+                        android:text="@string/tvFixtures_goalsHomeTeam" />
 
                     <TextView
-                        android:id="@+id/tvFixturesRight_goalsAwayTeam"
+                        android:id="@+id/tvFixtures_goalsAwayTeam"
                         style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixturesRight_goalsAwayTeam" />
+                        android:text="@string/tvFixtures_goalsAwayTeam" />
 
                 </TableRow>
             </TableLayout>

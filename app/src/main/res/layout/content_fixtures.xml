@@ -17,34 +17,36 @@
         <TableRow>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_date"
-                style="@style/content_competitions_id_fixtures_TextView"
-
-                />
+                android:id="@+id/tvFixturesRight_date"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_status"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_status"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_matchday"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_matchday"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_homeTeamName"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_homeTeamName"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_awayTeamName"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_awayTeamName"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_goalsHomeTeam"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_odds"
+                style="@style/content_fixtures_TextView"/>
 
             <TextView
-                android:id="@+id/tvCompetitionsIdFixturesRight_goalsAwayTeam"
-                style="@style/content_competitions_id_fixtures_TextView" />
+                android:id="@+id/tvFixturesRight_goalsHomeTeam"
+                style="@style/content_fixtures_TextView"/>
+
+            <TextView
+                android:id="@+id/tvFixturesRight_goalsAwayTeam"
+                style="@style/content_fixtures_TextView"/>
 
 
         </TableRow>

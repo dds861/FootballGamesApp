@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dd.retrofit1">
+    package="com.good.dd.footballdata">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,20 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ActivityCompetitions"/>
-        <activity android:name=".activities.ActivityCompetitionsId" />
-        <activity android:name=".activities.ActivityCompetitionsIdLeagueTable" />
-        <activity android:name=".activities.ActivityCompetitionsIdFixtures" />
-        <activity android:name=".activities.ActivityCompetitionsIdTeams" />
-        <activity android:name=".activities.ActivityTeamsIdPlayers" />
-        <activity android:name=".ActivityMain">
+        <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitions" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsId" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsIdLeagueTable" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsIdFixtures" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsIdTeams" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityTeamsIdPlayers" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityFixtures" />
+        <activity android:name="com.good.dd.footballdata.ActivityMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ActivityFixtures"></activity>
+
     </application>
 
 </manifest>

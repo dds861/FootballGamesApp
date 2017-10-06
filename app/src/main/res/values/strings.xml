@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Good Football Data</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
     <string name="numberofteams">numberOfTeams:</string>
     <string name="caption">caption:</string>
     <string name="league">league:</string>
@@ -48,12 +50,12 @@
     <string name="tvCompetitionsIdFixturesRight_result">result</string>
     <string name="tvCompetitionsIdFixturesRight_goalsHomeTeam">goalsHomeTeam</string>
     <string name="tvCompetitionsIdFixturesRight_goalsAwayTeam">goalsAwayTeam</string>
-    <string name="tvFixturesRight_date">date</string>
-    <string name="tvFixturesRight_status">status</string>
-    <string name="tvFixturesRight_matchday">matchday</string>
-    <string name="tvFixturesRight_homeTeamName">homeTeamName</string>
-    <string name="tvFixturesRight_awayTeamName">awayTeamName</string>
-    <string name="tvFixturesRight_odds">odds</string>
-    <string name="tvFixturesRight_goalsHomeTeam">goalsHomeTeam</string>
-    <string name="tvFixturesRight_goalsAwayTeam">goalsAwayTeam</string>
+    <string name="tvFixtures_date">date</string>
+    <string name="tvFixtures_status">status</string>
+    <string name="tvFixtures_matchday">matchday</string>
+    <string name="tvFixtures_homeTeamName">homeTeamName</string>
+    <string name="tvFixtures_awayTeamName">awayTeamName</string>
+    <string name="tvFixtures_odds">odds</string>
+    <string name="tvFixtures_goalsHomeTeam">goalsHomeTeam</string>
+    <string name="tvFixtures_goalsAwayTeam">goalsAwayTeam</string>
 </resources>
