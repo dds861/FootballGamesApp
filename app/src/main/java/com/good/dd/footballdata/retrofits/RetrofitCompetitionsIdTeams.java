@@ -59,9 +59,9 @@ public class RetrofitCompetitionsIdTeams extends AppCompatActivity {
                 UserCompetitionsIdTeams userList = response.body();
                 ArrayList<UserCompetitionsIdTeams.Teams> data = new ArrayList<>(userList.getTeams());
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
-                AdapterCompetitionsIdTeams recyclerViewAdapter = new AdapterCompetitionsIdTeams(context, data, id);
+                AdapterCompetitionsIdTeams adapterCompetitionsIdTeams = new AdapterCompetitionsIdTeams(context, data, id);
                 recyclerView.setLayoutManager(layoutManager);
-                recyclerView.setAdapter(recyclerViewAdapter);
+                recyclerView.setAdapter(adapterCompetitionsIdTeams);
 
 
             }

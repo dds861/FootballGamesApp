@@ -13,13 +13,12 @@ public class ActivityTeamsIdPlayers extends AppCompatActivity {
     private int idCompetitionClicked;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_competitions);
 
-        Log.i("autolog","ActivityTeamsIdPlayers");
+        Log.i("autolog", "ActivityTeamsIdPlayers");
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_teams_id_players);
         int idCompetitionClicked = getIntent().getIntExtra("idCompetitionClicked", 0);

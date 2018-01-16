@@ -3,6 +3,7 @@ package com.good.dd.footballdata.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
                 Intent intent = new Intent(context, ActivityTeamsIdPlayers.class);
 
                 intent.putExtra("idCompetitionClicked", idItemClicked);
+                Log.i("autolog", "idItemClicked: " + idItemClicked);
                 context.startActivity(intent);
             }
         });
@@ -62,8 +64,6 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
                 .with(context)
                 .load(urlImage)
                 .into(holder.tvTeamCrestUrl);
-
-
 
 
     }

@@ -23,6 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitTeamsIdPlayers extends AppCompatActivity {
+
     private Context context;
     private RecyclerView recyclerView;
     private int id;
@@ -30,9 +31,10 @@ public class RetrofitTeamsIdPlayers extends AppCompatActivity {
     private Retrofit retrofit = null;
 
     public RetrofitTeamsIdPlayers(Context context, int id, RecyclerView recyclerView) {
+        Log.i("autolog", "RetrofitTeamsIdPlayers: ");
         this.context = context;
         this.id = id;
-        this.recyclerView=recyclerView;
+        this.recyclerView = recyclerView;
     }
 
     public void isRetrofitNull() {
@@ -47,28 +49,35 @@ public class RetrofitTeamsIdPlayers extends AppCompatActivity {
     }
 
 
-
-
     public void getRetrofitTeamsIdPlayers() {
+        Log.i("autolog", "getRetrofitTeamsIdPlayers: ");
 
         isRetrofitNull();
 
         ApiTeamsIdPlayers apiTeamsIdPlayers = retrofit.create(ApiTeamsIdPlayers.class);
-        Call<UserTeamsIdPlayers> call = apiTeamsIdPlayers.getApiTeamsIdPlayers(57);
-        Log.i("autolog", "id: " + id);
+        Call<UserTeamsIdPlayers> call = apiTeamsIdPlayers.getApiTeamsIdPlayers(86);
         call.enqueue(new Callback<UserTeamsIdPlayers>() {
             @Override
             public void onResponse(Call<UserTeamsIdPlayers> call, Response<UserTeamsIdPlayers> response) {
 
 
+                //Получааю с сервера обьект UserTeamsIdPlayers
                 UserTeamsIdPlayers userList = response.body();
-                Log.i("autolog", "userList: " + userList);
+
+                //Из полученного обьекта выкачиваю список играков
                 ArrayList<UserTeamsIdPlayers.Players> data = new ArrayList<>(userList.getPlayers());
-                Log.i("autolog", "data: " + data);
+
+                //Создаю LinearLayoutManager
                 LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+
+                //В recyclerView устанавливаю созданный layoutManager
                 recyclerView.setLayoutManager(layoutManager);
-                AdapterTeamsIdPlayers recyclerViewAdapter = new AdapterTeamsIdPlayers(context, data, id);
-                recyclerView.setAdapter(recyclerViewAdapter);
+
+                //Создаю адаптер
+                AdapterTeamsIdPlayers adapterTeamsIdPlayers = new AdapterTeamsIdPlayers(context, data, id);
+
+                //Устанавливаю адаптер в recyclerView
+                recyclerView.setAdapter(adapterTeamsIdPlayers);
 
 
             }
@@ -80,7 +89,6 @@ public class RetrofitTeamsIdPlayers extends AppCompatActivity {
         });
 
     }
-
 
 
 }
