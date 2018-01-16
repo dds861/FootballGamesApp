@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.bumptech.glide.Glide;
-import com.good.dd.footballdata.activities.ActivityCompetitionsIdTeams;
 import com.good.dd.footballdata.R;
 import com.good.dd.footballdata.ViewHolder;
+import com.good.dd.footballdata.activities.ActivityTeamsIdPlayers;
 import com.good.dd.footballdata.users.UserCompetitionsIdTeams;
 
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
         btnTeams.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ActivityCompetitionsIdTeams.class);
+                Intent intent = new Intent(context, ActivityTeamsIdPlayers.class);
 
                 intent.putExtra("idCompetitionClicked", idItemClicked);
                 context.startActivity(intent);

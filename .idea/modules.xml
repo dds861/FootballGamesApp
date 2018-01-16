@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FootballGamesApp.iml" filepath="$PROJECT_DIR$/FootballGamesApp.iml" />
+      <module fileurl="file://C:\Users\dds86\Desktop\AndroidApplications\FootballGamesApp5\FootballGamesApp.iml" filepath="C:\Users\dds86\Desktop\AndroidApplications\FootballGamesApp5\FootballGamesApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FootballGamesApp5.iml" filepath="$PROJECT_DIR$/.idea/FootballGamesApp5.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

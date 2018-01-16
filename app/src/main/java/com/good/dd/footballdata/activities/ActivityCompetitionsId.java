@@ -3,14 +3,15 @@ package com.good.dd.footballdata.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
-import com.good.dd.footballdata.CreateRetrofit;
 import com.good.dd.footballdata.R;
+import com.good.dd.footballdata.retrofits.RetrofitCompetitionsId;
 
 
 public class ActivityCompetitionsId extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private CreateRetrofit createRetrofit;
+    private RetrofitCompetitionsId retrofitCompetitionsId;
 
     private int idCompetitionClicked;
 
@@ -19,10 +20,12 @@ public class ActivityCompetitionsId extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_competitions_id);
 
+        Log.i("autolog","ActivityCompetitionsId");
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_competitions_id);
         idCompetitionClicked = getIntent().getIntExtra("idCompetitionClicked", 0);
-        createRetrofit = new CreateRetrofit(this, idCompetitionClicked,recyclerView);
-        createRetrofit.getRetrofitCompetitionsId();
+        retrofitCompetitionsId = new RetrofitCompetitionsId(this, idCompetitionClicked,recyclerView);
+        retrofitCompetitionsId.getRetrofitCompetitionsId();
 
 
     }

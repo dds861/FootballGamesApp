@@ -33,6 +33,8 @@ public class AdapterTeamsIdPlayers extends RecyclerView.Adapter<ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.content_teams_id_players, parent, false);
 
+
+
         return new ViewHolder(view);
     }
 
