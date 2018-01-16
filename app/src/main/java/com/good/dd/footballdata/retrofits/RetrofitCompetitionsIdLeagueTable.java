@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.good.dd.footballdata.APIService;
 import com.good.dd.footballdata.adapters.AdapterCompetitionsIdLeagueTable;
+import com.good.dd.footballdata.api.ApiCompetitionsIdLeagueTable;
 import com.good.dd.footballdata.users.UserCompetitionsIdLeagueTable;
 
 import java.util.ArrayList;
@@ -51,8 +51,8 @@ public class RetrofitCompetitionsIdLeagueTable extends AppCompatActivity {
 
         isRetrofitNull();
 
-        APIService service = retrofit.create(APIService.class);
-        Call<UserCompetitionsIdLeagueTable> call = service.getApiCompetitionsIdLeagueTable(id);
+        ApiCompetitionsIdLeagueTable apiCompetitionsIdLeagueTable = retrofit.create(ApiCompetitionsIdLeagueTable.class);
+        Call<UserCompetitionsIdLeagueTable> call = apiCompetitionsIdLeagueTable.getApiCompetitionsIdLeagueTable(id);
         Log.i("autolog", "id: " + id);
         call.enqueue(new Callback<UserCompetitionsIdLeagueTable>() {
             @Override

@@ -1,17 +1,6 @@
 package com.good.dd.footballdata.api;
 
-import com.good.dd.footballdata.users.UserCompetitions;
-import com.good.dd.footballdata.users.UserCompetitionsId;
-import com.good.dd.footballdata.users.UserCompetitionsIdFixtures;
-import com.good.dd.footballdata.users.UserCompetitionsIdLeagueTable;
-import com.good.dd.footballdata.users.UserCompetitionsIdTeams;
-import com.good.dd.footballdata.users.UserFixtures;
-import com.good.dd.footballdata.users.UserFixturesId;
-import com.good.dd.footballdata.users.UserTeamsId;
-import com.good.dd.footballdata.users.UserTeamsIdFixtures;
 import com.good.dd.footballdata.users.UserTeamsIdPlayers;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

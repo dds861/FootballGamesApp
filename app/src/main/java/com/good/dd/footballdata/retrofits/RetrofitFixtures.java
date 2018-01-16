@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.good.dd.footballdata.APIService;
 import com.good.dd.footballdata.adapters.AdapterFixtures;
+import com.good.dd.footballdata.api.ApiFixtures;
 import com.good.dd.footballdata.users.UserFixtures;
 
 import java.util.ArrayList;
@@ -50,8 +50,8 @@ public class RetrofitFixtures extends AppCompatActivity {
 
         isRetrofitNull();
 
-        APIService service = retrofit.create(APIService.class);
-        Call<UserFixtures> call = service.getApiFixtures();
+        ApiFixtures apiFixtures = retrofit.create(ApiFixtures.class);
+        Call<UserFixtures> call = apiFixtures.getApiFixtures();
 
         call.enqueue(new Callback<UserFixtures>() {
             @Override

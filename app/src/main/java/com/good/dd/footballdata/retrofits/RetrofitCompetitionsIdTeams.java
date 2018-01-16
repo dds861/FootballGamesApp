@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.good.dd.footballdata.APIService;
 import com.good.dd.footballdata.adapters.AdapterCompetitionsIdTeams;
+import com.good.dd.footballdata.api.ApiCompetitionsIdTeams;
 import com.good.dd.footballdata.users.UserCompetitionsIdTeams;
 
 import java.util.ArrayList;
@@ -50,8 +50,8 @@ public class RetrofitCompetitionsIdTeams extends AppCompatActivity {
 
         isRetrofitNull();
 
-        APIService service = retrofit.create(APIService.class);
-        Call<UserCompetitionsIdTeams> call = service.getApiCompetitionsIdTeams(id);
+        ApiCompetitionsIdTeams apiCompetitionsIdTeams = retrofit.create(ApiCompetitionsIdTeams.class);
+        Call<UserCompetitionsIdTeams> call = apiCompetitionsIdTeams.getApiCompetitionsIdTeams(id);
         call.enqueue(new Callback<UserCompetitionsIdTeams>() {
             @Override
             public void onResponse(Call<UserCompetitionsIdTeams> call, Response<UserCompetitionsIdTeams> response) {

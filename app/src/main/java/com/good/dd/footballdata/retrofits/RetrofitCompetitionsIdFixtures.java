@@ -6,13 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.good.dd.footballdata.APIService;
 import com.good.dd.footballdata.adapters.AdapterCompetitionsIdFixtures;
-import com.good.dd.footballdata.adapters.AdapterFixtures;
-import com.good.dd.footballdata.adapters.AdapterTeamsIdPlayers;
+import com.good.dd.footballdata.api.ApiCompetitionsIdFixtures;
 import com.good.dd.footballdata.users.UserCompetitionsIdFixtures;
-import com.good.dd.footballdata.users.UserFixtures;
-import com.good.dd.footballdata.users.UserTeamsIdPlayers;
 
 import java.util.ArrayList;
 
@@ -55,8 +51,8 @@ public class RetrofitCompetitionsIdFixtures extends AppCompatActivity {
 
         isRetrofitNull();
 
-        APIService service = retrofit.create(APIService.class);
-        Call<UserCompetitionsIdFixtures> call = service.getApiCompetitionsIdFixtures(id);
+        ApiCompetitionsIdFixtures apiCompetitionsIdFixtures = retrofit.create(ApiCompetitionsIdFixtures.class);
+        Call<UserCompetitionsIdFixtures> call = apiCompetitionsIdFixtures.getApiCompetitionsIdFixtures(id);
         Log.i("autolog", "id: " + id);
         call.enqueue(new Callback<UserCompetitionsIdFixtures>() {
             @Override
