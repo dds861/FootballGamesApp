@@ -18,30 +18,41 @@
 
         <TextView
             android:id="@+id/tvPlayerName"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerName" />
 
         <TextView
             android:id="@+id/tvPlayerNameRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvPlayerPosition"
-            style="@style/activity_competitions_id_league_table_TextView"
-            android:text="@string/tvPlayerPosition" />
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tvPlayerPosition"
+
+
+            />
 
 
         <TextView
             android:id="@+id/tvPlayerPositionRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -54,12 +65,16 @@
 
         <TextView
             android:id="@+id/tvPlayerJerseyNumber"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerJerseyNumber" />
 
         <TextView
             android:id="@+id/tvPlayerJerseyNumberRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -72,12 +87,16 @@
 
         <TextView
             android:id="@+id/tvPlayerDateOfBirth"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerDateOfBirth" />
 
         <TextView
             android:id="@+id/tvPlayerDateOfBirthRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -90,12 +109,16 @@
 
         <TextView
             android:id="@+id/tvPlayerNationality"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerNationality" />
 
         <TextView
             android:id="@+id/tvPlayerNationalityRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -108,12 +131,16 @@
 
         <TextView
             android:id="@+id/tvPlayerContractUntil"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerContractUntil" />
 
         <TextView
             android:id="@+id/tvPlayerContractUntilRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -126,12 +153,16 @@
 
         <TextView
             android:id="@+id/tvPlayerMarketValue"
-            style="@style/activity_competitions_id_league_table_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvPlayerMarketValue" />
 
         <TextView
             android:id="@+id/tvPlayerMarketValueRight"
-            style="@style/content_competitions_id_league_table_TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
