@@ -16,6 +16,8 @@ import com.good.dd.footballdata.activities.ActivityTeamsIdPlayers;
 import com.good.dd.footballdata.users.UserCompetitionsIdTeams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
@@ -27,6 +29,7 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
     Context context;
     ArrayList<UserCompetitionsIdTeams.Teams> teams;
     private int idItemClicked;
+    Button btnTeams;
 
     public AdapterCompetitionsIdTeams(Context context, ArrayList<UserCompetitionsIdTeams.Teams> teams, int idItemClicked) {
         this.context = context;
@@ -35,25 +38,17 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.content_competitions_id_teams, parent, false);
-        Button btnTeams = (Button) view.findViewById(R.id.btnTeamPlayers);
-        btnTeams.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, ActivityTeamsIdPlayers.class);
 
-                intent.putExtra("idCompetitionClicked", idItemClicked);
-                Log.i("autolog", "idItemClicked: " + idItemClicked);
-                context.startActivity(intent);
-            }
-        });
+        btnTeams = (Button) view.findViewById(R.id.btnTeamPlayers);
 
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+        Log.i("autolog", "getSelf(): " + teams.get(position).get_links().getSelf().getHref());
 
 
         holder.tvTeamName.setText(teams.get(position).getName());
@@ -65,6 +60,27 @@ public class AdapterCompetitionsIdTeams extends RecyclerView.Adapter<ViewHolder>
                 .load(urlImage)
                 .into(holder.tvTeamCrestUrl);
 
+
+        btnTeams.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Log.i("autolog", "getSelf(): " + teams.get(position).get_links().getSelf().getHref());
+                String link = teams.get(position).get_links().getSelf().getHref();
+
+                List<String> items = Arrays.asList(link.split("/"));
+                Log.i("autolog", "items last: " + items.get(items.size()-1));
+
+
+                Log.i("autolog", "position: " + position);
+                Intent intent = new Intent(context, ActivityTeamsIdPlayers.class);
+
+
+                intent.putExtra("idCompetitionClicked", idItemClicked);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
