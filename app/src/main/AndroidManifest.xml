@@ -17,8 +17,8 @@
         <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsIdFixtures" />
         <activity android:name="com.good.dd.footballdata.activities.ActivityCompetitionsIdTeams" />
         <activity android:name="com.good.dd.footballdata.activities.ActivityTeamsIdPlayers" />
-        <activity android:name="com.good.dd.footballdata.activities.ActivityFixtures" />
-        <activity android:name="com.good.dd.footballdata.ActivityMain">
+        <activity android:name="com.good.dd.footballdata.ActivityMain" />
+        <activity android:name="com.good.dd.footballdata.activities.ActivityFixtures">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

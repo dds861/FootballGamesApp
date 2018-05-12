@@ -189,10 +189,10 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         //UserFixtures
         this.tvFixturesRight_date = (TextView) view.findViewById(R.id.tvFixturesRight_date);
         this.tvFixturesRight_status = (TextView) view.findViewById(R.id.tvFixturesRight_status);
-        this.tvFixturesRight_matchday = (TextView) view.findViewById(R.id.tvFixturesRight_matchday);
+//        this.tvFixturesRight_matchday = (TextView) view.findViewById(R.id.tvFixturesRight_matchday);
         this.tvFixturesRight_homeTeamName = (TextView) view.findViewById(R.id.tvFixturesRight_homeTeamName);
         this.tvFixturesRight_awayTeamName = (TextView) view.findViewById(R.id.tvFixturesRight_awayTeamName);
-        this.tvFixturesRight_odds = (TextView) view.findViewById(R.id.tvFixturesRight_odds);
+//        this.tvFixturesRight_odds = (TextView) view.findViewById(R.id.tvFixturesRight_odds);
         this.tvFixturesRight_goalsHomeTeam = (TextView) view.findViewById(R.id.tvFixturesRight_goalsHomeTeam);
         this.tvFixturesRight_goalsAwayTeam = (TextView) view.findViewById(R.id.tvFixturesRight_goalsAwayTeam);
     }

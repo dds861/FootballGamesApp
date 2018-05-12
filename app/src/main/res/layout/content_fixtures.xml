@@ -7,56 +7,120 @@
 
     android:orientation="vertical">
 
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        >
-
-        <TableRow>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_date"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_status"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_matchday"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_homeTeamName"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_awayTeamName"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_odds"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_goalsHomeTeam"
-                style="@style/content_fixtures_TextView"/>
-
-            <TextView
-                android:id="@+id/tvFixturesRight_goalsAwayTeam"
-                style="@style/content_fixtures_TextView"/>
-
-
-        </TableRow>
-    </TableLayout>
-
-
-    <View
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="1dp">
 
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFixturesRight_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="date"
+                    android:textColor="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tvFixturesRight_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="status"
+                    android:textColor="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFixturesRight_goalsHomeTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="0"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/tvFixturesRight_goalsAwayTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="0"
+
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvFixturesRight_homeTeamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_vs"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:padding="16dp"
+                        android:text="Liverpool"
+                        android:textColor="@color/primary_text" />
+
+                    <TextView
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tv_vs"
+                        android:paddingTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="VS"
+                        android:textColor="@color/divider" />
+
+                    <TextView
+                        android:id="@+id/tvFixturesRight_awayTeamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_vs"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:padding="16dp"
+                        android:text="Barcelona12312312312345234523452345234523452"
+                        android:textColor="@color/primary_text" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
 </LinearLayout>

@@ -1,83 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.good.dd.footballdata.activities.ActivityFixtures">
 
-    <HorizontalScrollView
+
+    z
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_fixtures"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
 
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/colorPrimary" />-->
+</LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TableRow>
-
-                    <TextView
-                        android:id="@+id/tvFixtures_date"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_date" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_status"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_status" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_matchday"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_matchday" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_homeTeamName"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_homeTeamName" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_awayTeamName"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_awayTeamName" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_odds"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_odds" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_goalsHomeTeam"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_goalsHomeTeam" />
-
-                    <TextView
-                        android:id="@+id/tvFixtures_goalsAwayTeam"
-                        style="@style/activity_fixtures_Data"
-                        android:text="@string/tvFixtures_goalsAwayTeam" />
-
-                </TableRow>
-            </TableLayout>
-
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_fixtures"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="vertical" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/colorPrimary" />
-        </LinearLayout>
-    </HorizontalScrollView>
-</android.support.constraint.ConstraintLayout>

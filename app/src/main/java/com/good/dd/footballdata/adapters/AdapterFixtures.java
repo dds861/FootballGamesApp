@@ -51,10 +51,10 @@ public class AdapterFixtures extends RecyclerView.Adapter<ViewHolder> {
 
         holder.tvFixturesRight_date.setText(tvFixturesRight_date);
         holder.tvFixturesRight_status.setText(tvFixturesRight_status);
-        holder.tvFixturesRight_matchday.setText(tvFixturesRight_matchday);
+//        holder.tvFixturesRight_matchday.setText(tvFixturesRight_matchday);
         holder.tvFixturesRight_homeTeamName.setText(tvFixturesRight_homeTeamName);
         holder.tvFixturesRight_awayTeamName.setText(tvFixturesRight_awayTeamName);
-        holder.tvFixturesRight_odds.setText(tvFixturesRight_odds);
+//        holder.tvFixturesRight_odds.setText(tvFixturesRight_odds);
         holder.tvFixturesRight_goalsHomeTeam.setText(tvFixturesRight_goalsHomeTeam);
         holder.tvFixturesRight_goalsAwayTeam.setText(tvFixturesRight_goalsAwayTeam);
     }
